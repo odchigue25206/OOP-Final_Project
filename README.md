@@ -44,16 +44,73 @@ It aims to make data preparation easier for beginners in data science by offerin
 # DataMedic – Feature-Integrated Class Design
 Main Classes
 
-1. DataInspector → handles 🧾 inspect()
+1. **DataInspector** → handles 🧾 inspect()
 
 - Focus: Scanning and identifying dataset problems (missing values, duplicates, outliers, etc.)
 
-2. DataDoctor → handles 💡 diagnose() and 🧹 treat()
+2. **DataDoctor** → handles 💡 diagnose() and 🧹 treat()
 
 - Focus: Suggests and applies fixes based on inspection.
 
-3. ReportGenerator → handles 📊 report() and 📈 health_score()
+3. **ReportGenerator** → handles 📊 report() and 📈 health_score()
 
 - Focus: Summarizes actions and evaluates data quality.
+
+# UML Design
+┌─────────────────────────────┐
+│        DataInspector        │
+├─────────────────────────────┤
+│ - _data                     │
+│ - _issues                   │
+├─────────────────────────────┤
+│ + __init__(dataframe)       │
+│ + inspect()                 │  🧾
+│ + detect_missing()          │
+│ + detect_duplicates()       │
+│ + detect_outliers()         │
+│ + get_summary()             │
+└──────────────┬──────────────┘
+               │
+          inherits
+               │
+               ▼
+┌─────────────────────────────┐
+│          DataDoctor         │
+├─────────────────────────────┤
+│ - _fix_log                  │
+├─────────────────────────────┤
+│ + diagnose()                │  💡
+│ + treat()                   │  🧹
+│ + fix_missing()             │
+│ + fix_duplicates()          │
+│ + fix_outliers()            │
+│ + get_fix_log()             │
+└──────────────┬──────────────┘
+               │
+         composition
+               │
+               ▼
+┌─────────────────────────────┐
+│       ReportGenerator       │
+├─────────────────────────────┤
+│ - _report_data              │
+│ - _score                    │
+├─────────────────────────────┤
+│ + report()                  │  📊
+│ + health_score()            │  📈
+│ + export_report(file_name)  │
+└─────────────────────────────┘
+
+# OOP Concept Integration Summary
+
+| OOP Concept        | How DataMedic Implements It                                                                   |
+| ------------------ | --------------------------------------------------------------------------------------------- |
+| **Encapsulation**  | Dataset and logs (`_data`, `_issues`, `_fix_log`) are private/protected.                      |
+| **Inheritance**    | `DataDoctor` inherits inspection methods from `DataInspector`.                                |
+| **Polymorphism**   | Methods like `report()` and `__repr__()` behave differently depending on subclass.            |
+| **Composition**    | `ReportGenerator` uses a `DataDoctor` object for reporting and scoring.                       |
+| **Dunder Methods** | Planned: `__init__`, `__repr__`, `__len__`, `__eq__`, `__lt__` for comparisons and summaries. |
+
+
 
 
