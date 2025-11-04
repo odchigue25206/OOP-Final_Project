@@ -64,7 +64,7 @@ Main Classes
 │ - _issues                   │
 ├─────────────────────────────┤
 │ + __init__(dataframe)       │
-│ + inspect()                 │
+│ + inspect()                 │  
 │ + detect_missing()          │
 │ + detect_duplicates()       │
 │ + detect_outliers()         │
@@ -79,8 +79,8 @@ Main Classes
 ├─────────────────────────────┤
 │ - _fix_log                  │
 ├─────────────────────────────┤
-│ + diagnose()                │
-│ + treat()                   │
+│ + diagnose()                │  
+│ + treat()                   │  
 │ + fix_missing()             │
 │ + fix_duplicates()          │
 │ + fix_outliers()            │
@@ -96,10 +96,11 @@ Main Classes
 │ - _report_data              │
 │ - _score                    │
 ├─────────────────────────────┤
-│ + report()                  │
-│ + health_score()            │
+│ + report()                  │  
+│ + health_score()            │  
 │ + export_report(file_name)  │
 └─────────────────────────────┘
+
 
 
 
