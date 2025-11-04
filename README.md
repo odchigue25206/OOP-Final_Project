@@ -31,4 +31,15 @@ It aims to make data preparation easier for beginners in data science by offerin
 - simple function calls, and
 - clear, human-readable reports.
 
+CORE FEATURES (Planned)
+
+| Feature               | Description                                                        | Example                 |
+| --------------------- | ------------------------------------------------------------------ | ----------------------- |
+| 🧾 **inspect()**      | Analyze dataset for common issues and summarize findings           | `doctor.inspect()`      |
+| 💡 **diagnose()**     | Suggest possible cleaning actions based on inspection              | `doctor.diagnose()`     |
+| 🧹 **treat()**        | Automatically fix detected issues (missing values, outliers, etc.) | `doctor.treat()`        |
+| 📊 **report()**       | Generate a summary of all cleaning actions taken                   | `doctor.report()`       |
+| 📈 **health_score()** | Provide a data quality score from 0–100                            | `doctor.health_score()` |
+
+
 
