@@ -31,7 +31,7 @@ It aims to make data preparation easier for beginners in data science by offerin
 - simple function calls, and
 - clear, human-readable reports.
 
-CORE FEATURES (Planned)
+# CORE FEATURES (Planned)
 
 | Feature               | Description                                                        | Example                 |
 | --------------------- | ------------------------------------------------------------------ | ----------------------- |
@@ -41,5 +41,19 @@ CORE FEATURES (Planned)
 | 📊 **report()**       | Generate a summary of all cleaning actions taken                   | `doctor.report()`       |
 | 📈 **health_score()** | Provide a data quality score from 0–100                            | `doctor.health_score()` |
 
+# DataMedic – Feature-Integrated Class Design
+Main Classes
+
+1. DataInspector → handles 🧾 inspect()
+
+- Focus: Scanning and identifying dataset problems (missing values, duplicates, outliers, etc.)
+
+2. DataDoctor → handles 💡 diagnose() and 🧹 treat()
+
+- Focus: Suggests and applies fixes based on inspection.
+
+3. ReportGenerator → handles 📊 report() and 📈 health_score()
+
+- Focus: Summarizes actions and evaluates data quality.
 
 
