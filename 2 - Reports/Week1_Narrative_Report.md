@@ -4,6 +4,7 @@
 **Course:** Object-Oriented Programming (OOP)  
 **Project Title:** DataMedic: A Python Library for Data Cleaning
 
+**Roles and Task Assignments**
 
 | Member      | Role              | Responsibilities                                                                                |
 | ----------- | ----------------- | ----------------------------------------------------------------------------------------------- |
