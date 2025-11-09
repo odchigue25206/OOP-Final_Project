@@ -1,3 +1,20 @@
+# Narrative Report — Week 1
+
+**Date Covered:** October 28 – November 3, 2025  
+**Course:** Object-Oriented Programming (OOP)  
+**Project Title:** DataMedic: A Python Library for Data Cleaning
+
+
+| Member      | Role              | Responsibilities                                                                                |
+| ----------- | ----------------- | ----------------------------------------------------------------------------------------------- |
+| **Jave**    | Leader            | Coordinated planning sessions, finalized concept, created UML design, and managed GitHub setup. |
+| **Rynzo**   | Developer         | Assisted in designing core methods for data inspection and diagnosing data issues.              |
+| **Sodais**  | Developer         | Researched data cleaning techniques and contributed to class method design.                     |
+| **Harold**  | Documentation     | Drafted initial documentation and took charge of report formatting.                             |
+| **Reymart** | Researcher/Tester | Collected sample datasets and prepared for testing phases in later weeks.                       |
+
+
+
 # Introduction
 For the first week of our OOP final project, our group officially began the development of DataMedic, a Python-based data cleaning library designed to assist students, beginners in data science, data scientists and analysts in diagnosing and treating common dataset issues. The library aims to embody key object-oriented programming concepts such as encapsulation, inheritance, polymorphism, composition, and the use of dunder methods. DataMedic will serve as a diagnostic and treatment tool that inspects, cleans, and reports on dataset health—offering a unique, medical-inspired approach to data quality management.
 
