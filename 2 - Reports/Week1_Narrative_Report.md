@@ -8,11 +8,11 @@
 
 | Member      | Role              | Responsibilities                                                                                |
 | ----------- | ----------------- | ----------------------------------------------------------------------------------------------- |
-| **Jave**    | Leader            | Coordinated planning sessions, finalized concept, created UML design, and managed GitHub setup. |
-| **Rynzo**   | Developer         | Assisted in designing core methods for data inspection and diagnosing data issues.              |
-| **Sodais**  | Developer         | Researched data cleaning techniques and contributed to class method design.                     |
-| **Harold**  | Documentation     | Drafted initial documentation and took charge of report formatting.                             |
-| **Reymart** | Researcher/Tester | Collected sample datasets and prepared for testing phases in later weeks.                       |
+| **Odchigue, Jave Melchor P.**    | Leader            | Coordinated planning sessions, finalized concept, created UML design, and managed GitHub setup. |
+| **Ruiz, Rynzo Rapheal R.**   | Developer         | Assisted in designing core methods for data inspection and diagnosing data issues.              |
+| **Angni, Sodais M.**  | Developer         | Researched data cleaning techniques and contributed to class method design.                     |
+| **Magtrayo, Harold Hope M.**  | Documentation     | Drafted initial documentation and took charge of report formatting.                             |
+| **Padillo, Reymart** | Researcher/Tester | Collected sample datasets and prepared for testing phases in later weeks.                       |
 
 
 
