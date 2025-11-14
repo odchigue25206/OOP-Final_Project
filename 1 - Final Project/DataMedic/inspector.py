@@ -1,61 +1,63 @@
+"""
+data_inspector.py
+Handles dataset inspection: missing values, duplicates, and outliers.
+"""
+
 import pandas as pd
-import numpy as np
-from scipy import stats
 
 class DataInspector:
     """
-    A class for inspecting datasets and detecting common data issues.
-
-    Attributes
-    ----------
-    _data : pd.DataFrame
-        The dataset to inspect.
-    _issues : dict
-        A record of detected data problems.
+    Scans a dataset and identifies common data quality issues.
     """
 
     def __init__(self, dataframe: pd.DataFrame):
         """
-        Initialize the DataInspector with a given dataframe.
-
-        Parameters
-        ----------
-        dataframe : pd.DataFrame
-            The dataset to inspect.
+        Initialize the inspector with a pandas DataFrame.
         """
-        self._data = dataframe.copy()
+        self._data = dataframe
         self._issues = {}
 
     def inspect(self):
-        """Analyze dataset for missing values, duplicates, and outliers."""
-        self.detect_missing()
-        self.detect_duplicates()
-        self.detect_outliers()
+        """
+        Runs all detection methods and stores results in _issues.
+        """
+        self._issues['missing'] = self.detect_missing()
+        self._issues['duplicates'] = self.detect_duplicates()
+        self._issues['outliers'] = self.detect_outliers()
         return self._issues
 
     def detect_missing(self):
-        """Detect missing values in the dataset."""
-        missing = self._data.isnull().sum()
-        self._issues["missing_values"] = missing[missing > 0]
-        return self._issues["missing_values"]
+        """
+        Detect missing values in the dataset.
+        """
+        return self._data.isnull().sum()
 
     def detect_duplicates(self):
-        """Detect duplicate rows in the dataset."""
-        duplicates = self._data.duplicated().sum()
-        self._issues["duplicates"] = duplicates
-        return duplicates
+        """
+        Detect duplicated rows.
+        """
+        return self._data.duplicated().sum()
 
     def detect_outliers(self):
-        """Detect outliers using Z-score method."""
-        numeric_data = self._data.select_dtypes(include=[np.number])
-        z_scores = np.abs(stats.zscore(numeric_data))
-        outliers = (z_scores > 3).sum().sum()
-        self._issues["outliers"] = int(outliers)
+        """
+        Basic IQR outlier detection for numeric columns.
+        """
+        outliers = {}
+        numeric_cols = self._data.select_dtypes(include="number").columns
+
+        for col in numeric_cols:
+            Q1 = self._data[col].quantile(0.25)
+            Q3 = self._data[col].quantile(0.75)
+            IQR = Q3 - Q1
+            lower = Q1 - 1.5 * IQR
+            upper = Q3 + 1.5 * IQR
+            count = self._data[(self._data[col] < lower) | (self._data[col] > upper)].shape[0]
+            outliers[col] = count
+
         return outliers
 
     def get_summary(self):
-        """Return a summary of all detected issues."""
+        """
+        Returns the collected issues.
+        """
         return self._issues
-
-    def __repr__(self):
-        return f"DataInspector(summary={len(self._issues)} issues detected)"
