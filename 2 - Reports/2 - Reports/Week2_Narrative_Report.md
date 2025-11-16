@@ -16,12 +16,8 @@
 
 
 
-# Introduction
+# Development Updates
 
-# Objectives for the Week
-
-# Narrative of Activities
+# Screenshots
 
 # Challenges Encountered
-
-# Reflection and Learning
