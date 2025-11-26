@@ -9,36 +9,18 @@
 This week, our team looked into starting the coding part right. The goal? Getting the diagnosis data loaded smoothly - no fiddling with file paths by hand each time. Because we’re aiming for something easy to use, we needed a way for people to just pick or drop a file instead of changing code bits themselves.
 
 ## 1. Exploring Initialization Functions
-Rynzo led the search, while Jave dug into options. Their focus shifted across ways to manage picking files - like testing shortcuts or adjusting inputs
-* Using built-in Python dialogs
-* Looking into tools you can use to check files inside a folder
-* Checking if Jupyter Notebook supports upload widgets
-* Checking if the feature spots file locations on its own
+Rynzo led the search while Jave explored different options. Their work focused on figuring out how the system could let users select files without manually changing the code. They tried several approaches—like using built-in Python dialogs, checking whether Jupyter Notebook supports upload widgets, and exploring tools that can automatically detect files in a folder or identify file locations on their own.
 
-Still, every method brought its own issues. A few used strange tools we’d never seen before, while some needed extra steps just to start. Quite a few guides acted like we already knew stuff we didn’t. Because it was our first go at managing files, all of it seemed confusing and heavy.
+Each method introduced new complications. Some required unfamiliar tools, others demanded additional setup steps, and many online guides assumed we already knew concepts we hadn’t learned yet. Since it was our first attempt at handling file-management functions, the entire process felt overwhelming and confusing.
 
-## 2. The Main Issue: Constant Path Changes
-One major issue we ran into? The setup uses fixed file locations right now - so it can't adapt easily
-* Each time we aim to check fresh data,
-* Each time you shift the file into a new folder
-* Each time someone else in the team executes the script
+2. The Main Issue: Constant Path Changes
+A major problem we discovered was that the current setup uses fixed file paths. This means the code cannot adjust automatically whenever the dataset changes location. Every time we want to test new data, move the file to a different folder, or let another group member run the script on their own device, we are forced to open the code and manually update the file path.
 
-We’d need to open the script by hand, then update the location. That method takes too much time - plus it won’t work well once the system goes live, particularly when different people start using the tool.
-Due to this restriction, we looked into a feature able to:
-* Finds the file location on its own
-* Let users pick a file
-* Bring in data while keeping the code exactly as it is
+This approach is inefficient and would cause issues once the system is used by multiple people. Because of this limitation, we began searching for a method that could automatically detect file paths, allow users to select a file easily, and load the data without requiring any changes in the actual script. Although we found potential solutions, each one involved tools or functions that were new to us, which means we still need more time to learn how they work.
+3. Decision to Move the Task to Next Week
+After reviewing our progress, we realized that we needed more time to understand how file-handling should be implemented properly. Instead of rushing a solution that might break later, we decided to move this task to next week’s objectives. This will give us the opportunity to study the most effective way to allow file selection, keep the process simple and user-friendly, reduce the chances of errors affecting the main system, and ensure that all group members know how to use the function correctly.
 
-We found a few options - though each means picking up tools we haven't used before.
-
-#  3. Decision to Move the Task to Next Week
-Looking back at what we tried, it seemed clear - more time was needed to explore how files are managed. Rather than rushing something half-baked, we chose to shift this work into next week’s plan so we could:
-* Check out the top way to pick files
-* Keep the end result straightforward yet easy to use
-* Few mistakes could mess up the core system
-* Makes sure everyone knows how to work it
-
-This’ll make it easier to create a stronger setup down the road - using simpler parts that actually work well together.
+By postponing this task, we can create a stronger and more stable setup that will integrate smoothly with the rest of the project once we fully understand the tools involved.
 # Screenshots
 
 # Challenges Encountered
