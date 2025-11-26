@@ -8,7 +8,7 @@
 # Development Updates
 This week, our team looked into starting the coding part right. The goal? Getting the diagnosis data loaded smoothly - no fiddling with file paths by hand each time. Because we’re aiming for something easy to use, we needed a way for people to just pick or drop a file instead of changing code bits themselves.
 
-1. Exploring Initialization Functions
+## 1. Exploring Initialization Functions
 Rynzo led the search, while Jave dug into options. Their focus shifted across ways to manage picking files - like testing shortcuts or adjusting inputs
 * Using built-in Python dialogs
 * Looking into tools you can use to check files inside a folder
