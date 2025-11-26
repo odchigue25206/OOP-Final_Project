@@ -16,7 +16,7 @@ Rynzo led the search, while Jave dug into options. Their focus shifted across wa
 * Checking if the feature spots file locations on its own
 Still, every method brought its own issues. A few used strange tools we’d never seen before, while some needed extra steps just to start. Quite a few guides acted like we already knew stuff we didn’t. Because it was our first go at managing files, all of it seemed confusing and heavy.
 
-2. The Main Issue: Constant Path Changes
+## 2. The Main Issue: Constant Path Changes
 One major issue we ran into? The setup uses fixed file locations right now - so it can't adapt easily
 * Each time we aim to check fresh data,
 * Each time you shift the file into a new folder
@@ -28,7 +28,7 @@ Due to this restriction, we looked into a feature able to:
 * Bring in data while keeping the code exactly as it is
 We found a few options - though each means picking up tools we haven't used before.
 
-3. Decision to Move the Task to Next Week
+#  3. Decision to Move the Task to Next Week
 Looking back at what we tried, it seemed clear - more time was needed to explore how files are managed. Rather than rushing something half-baked, we chose to shift this work into next week’s plan so we could:
 Check out the top way to pick files
 Keep the end result straightforward yet easy to use
