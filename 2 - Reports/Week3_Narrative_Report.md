@@ -1,4 +1,4 @@
-# Narrative Report — Week 2
+# Narrative Report — Week 3
 
 **Date Covered:** November 17 – November 21, 2025  
 **Course:** Object-Oriented Programming (OOP)  
