@@ -24,8 +24,8 @@ After reviewing our progress, we realized that we needed more time to understand
 By postponing this task, we can create a stronger and more stable setup that will integrate smoothly with the rest of the project once we fully understand the tools involved.
 
 # Screenshots
-<img width="960" height="691" alt="image" src="https://github.com/user-attachments/assets/9d411bf2-3305-4d3e-81ee-65e33cf63cd0" />
-<img width="950" height="848" alt="Screenshot 2025-11-26 145722" src="https://github.com/user-attachments/assets/df8f8f10-8807-46e5-96a3-cddab56a02e0" />
+<img width="960" height="775" alt="image" src="https://github.com/user-attachments/assets/45dd199e-e45c-4d88-9474-14c37efd2de2" />
+
 
 # Challenges Encountered
 During this week, Rynzo and Jave tried to figure out how to start the code by searching for solutions. Rynzo thought about how to avoid constantly changing the file path to load the data we need for diagnosis. They looked for a function that would allow us to easily insert or select the file without editing anything in the code. Everyone found it challenging since it was our first time working with these functions, and everything felt new. Since we need to do more research to create a better and more efficient function, we decided to move this task to next week objectives.
