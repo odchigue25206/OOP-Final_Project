@@ -32,3 +32,10 @@ which helps when checking for mistakes in paths or naming. Because of these twea
 Some issues included having to set the base path by hand; also,
 the program would crash if someone typed an incorrect filename. Folder layouts varied between team members while certain file types weren't well supported either.
 Even so, Week 3 showed progress compared to Week 2 our class is now working properly and structured better for handling files methodically.
+
+# Testing Note
+While testing, the complete DataMedic workflow ran on a sample set - due to missing file dirty_cafe_sales.csv.
+The program showed the right error message, then shifted to a backup DataFrame. This proved the DataGetter class manages absent files smoothly, offering substitute data rather than failing.
+![5a426325-ee30-4c36-8f1a-d7594adb9fd4](https://github.com/user-attachments/assets/e5aec061-71a0-4779-a2fa-30e49941558c)
+![be5bce20-0db9-4da4-b7c1-9d7132fe3e03](https://github.com/user-attachments/assets/63a248ae-d55f-4706-ab37-24207cb3d9f8)
+
