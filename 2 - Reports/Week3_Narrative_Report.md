@@ -8,8 +8,8 @@
 
 ## 1. Implementing the DataGetter Class
 In Week 2, it became clear that fixed file paths caused problems; therefore, the focus shifted in Week 3 toward creating a more flexible method for accessing data files. Rather than relying on outdated approaches,
-We created the DataGetter class with Python’s pathlib module - this setup uses a single main directory but allows inputting any filename during execution.
-This setup fetches file data automatically - eliminating repeated adjustments to complex directory paths. Unlike the previous version, it reduces frustration while promoting clearer, better-organized file handling.
+We created the DataGetter class with Python’s pathlib module this setup uses a single main directory but allows inputting any filename during execution.
+This setup fetches file data automatically eliminating repeated adjustments to complex directory paths. Unlike the previous version, it reduces frustration while promoting clearer, better-organized file handling.
 
 ## 2. Testing the Read Function
 We ran checks on the read_file() function with various text plus CSV examples to see if it worked right.
@@ -31,4 +31,4 @@ which helps when checking for mistakes in paths or naming. Because of these twea
 # Challenges Encountered
 Some issues included having to set the base path by hand; also,
 the program would crash if someone typed an incorrect filename. Folder layouts varied between team members while certain file types weren't well supported either.
-Even so, Week 3 showed progress compared to Week 2 - our class is now working properly and structured better for handling files methodically.
+Even so, Week 3 showed progress compared to Week 2 our class is now working properly and structured better for handling files methodically.
