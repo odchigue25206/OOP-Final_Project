@@ -16,7 +16,9 @@ We also worked on cleaning up the entire repository of the project to be properl
 
 # Reviewing and Refining All Code
 Other important work to be done during Week 4 was to review the entire codebase for consistency, functionality, and documentation. We looked at every class and function, updated docstrings detailing their behavior, and then removed redundant comments or unnecessary imports. The team fixed formatting issues, unified naming conventions, and made sure that example code present in README matched the actual implementation. We also ran all code snippets included in the documentation to ensure that they executed without errors. This refinement phase enhanced clarity, readability, and reliability for the project in preparation for its final release.
+
 # Screenshoots
+
 <img width="1869" height="780" alt="image" src="https://github.com/user-attachments/assets/8db7d009-d3d4-4f9a-b06b-bddee41f8160" />
 <img width="1852" height="780" alt="image" src="https://github.com/user-attachments/assets/8a690657-dfd0-4ac8-801d-be424958809a" />
 <img width="1827" height="784" alt="image" src="https://github.com/user-attachments/assets/2588876a-f8c9-4c7d-84b1-8b6ac2bc156a" />
