@@ -6,9 +6,9 @@
 
 # Documentation & Collaboration
 
-During Week 4, we focused on wrapping up the project for launch this meant sorting out all required documents while making sure the code was tidy and publish-ready. A key step forward was finishing the "README" file it now holds a brief summary of the project, setup directions, practical examples, and licensing details. The file clarifies what CleanOps aims to do, lists the toolkit's capabilities, and gives short Python snippets showing dataset checks, auto-cleaning actions, report creation, and end-to-end pipeline execution. Furthermore, installation guidance was structured into clear sections, covering both pip-based and manual source setups.
+During Week 4, we focused on wrapping up the project for launch this meant sorting out all required documents while making sure the code was tidy and publish-ready. A key step forward was finishing the **"README"** file it now holds a brief summary of the project, setup directions, practical examples, and licensing details. The file clarifies what CleanOps aims to do, lists the toolkit's capabilities, and gives short Python snippets showing dataset checks, auto-cleaning actions, report creation, and end-to-end pipeline execution. Furthermore, installation guidance was structured into clear sections, covering both pip-based and manual source setups.
 
-This week, the team went through the full repository removing duplicate files while verifying module alignment with docs. The setup.py and LICENSE files were completed, along with additional required assets for distribution. As a result, project structure met requirements and stood prepared for deployment.
+This week, the team went through the full repository removing duplicate files while verifying module alignment with docs. **The setup.py** and **LICENSE** files were completed, along with additional required assets for distribution. As a result, project structure met requirements and stood prepared for deployment.
 Week 4 focused on clear structure and fine-tuning. Since the README was finished and the repo cleaned up.
 
 # Screenshoots
