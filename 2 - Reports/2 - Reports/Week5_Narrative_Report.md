@@ -16,6 +16,8 @@ Week 5 ended with CleanOps deployed successfully - verification followed, then p
 
 # Screenshot
 <img width="1073" height="462" alt="image" src="https://github.com/user-attachments/assets/362fdaeb-e921-4449-83d1-ba26ec3a38b7" />
+
 <img width="1098" height="327" alt="image" src="https://github.com/user-attachments/assets/39e80524-0181-4e58-8bb4-73b96731676a" />
+
 <img width="1050" height="187" alt="image" src="https://github.com/user-attachments/assets/067c055e-2bcf-4fb2-9d68-98e500f0dcbf" />
 
